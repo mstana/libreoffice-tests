@@ -21,6 +21,7 @@ Set up of tools for libreoffice test automation
 	3. Repository should be ready
 		a. if needed change current git branch to your personal git branch (git checkout "name_of_branch")
 		b. run command in root folder of project git submodule status and check if there is  behave_common_steps
+	4. Use the same process for dogtail_gui_helper submodule of submodule behave_common_steps
 
 
 + How to run test:
