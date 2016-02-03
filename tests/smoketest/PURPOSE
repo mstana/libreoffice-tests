@@ -1,0 +1,5 @@
+PURPOSE of /desktop/rhel7/libreoffice/smoketest
+Description: Upstream smoketest for LibreOffice
+Author: Jiri Koten <jkoten@redhat.com>
+
+http://tcms.engineering.redhat.com/case/169130/

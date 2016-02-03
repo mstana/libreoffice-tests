@@ -1,0 +1,55 @@
+#Testname , Relative workdir under component, Command and args , Pkg Dependencies
+#general
+startViaCommand, ., ./runtest.sh start_soffice_via_command, 
+startViaMenu, ., ./runtest.sh start_soffice_via_menu, 
+closeViaShortcut, ., ./runtest.sh quit_soffice_via_shortcut, 
+closeViaGnomePanel, ., ./runtest.sh close_soffice_via_gnome_panel,
+closeViaMenu, ., ./runtest.sh quit_soffice_via_menu,
+showAboutDialog, ., ./runtest.sh soffice_about,
+showLicense, ., ./runtest.sh soffice_license,
+openFileViaMenu, ., ./runtest.sh soffice_file_open,
+exportPdf, ., ./runtest.sh soffice_export_pdf,
+saveFileViaMenu, ., ./runtest.sh soffice_file_save,
+
+#draw
+drawDrawLine, ., ./runtest.sh draw_draw_a_line,
+drawModifyName, ., ./runtest.sh draw_modify_name,
+drawImportSvg, ., ./runtest.sh draw_import_svg,
+
+#impress
+impressChangePresentationLayout, ., ./runtest.sh impress_change_layout_of_presentation,
+impressDuplicateSlide, ., ./runtest.sh impress_duplicate_slide,
+impressInsertSlide, ., ./runtest.sh impress_insert_slide,
+impressStartSlideshow, ., ./runtest.sh impress_start_slideshow,
+impressWizzard, ., ./runtest.sh impress_wizard,
+impressExportOdpToPpt, ., ./runtest.sh export_odp_to_ppt,
+
+#writer
+writerInsertSpecialCharacter, ., ./runtest.sh writer_insert_special_character,
+writerInsertTable, ., ./runtest.sh writer_insert_table,
+selectAllAlsoTables, ., ./runtest.sh select_all_also_tables,
+searchAndReplaceText, ., ./runtest.sh search_and_replace_text,
+writerInsertFormula, ., ./runtest.sh writer_insert_formula,
+writerOpenFormulaEditor, ., ./runtest.sh writer_open_formula_editor,
+writerExportToDoc, ., ./runtest.sh export_odt_to_doc,
+writerLunchMathEditor, ., ./runtest.sh lunch_math_editor,
+
+#calc
+cellRecalculation, ., ./runtest.sh cell_recalculation,
+calcRandomNumberGenerator, ., ./runtest.sh random_number_generator,
+calcCreateNonEnglishSpreadsheet, ., ./runtest.sh create_non_english_spreadsheet,
+calcExportEmptyDocumentToPdf, ., ./runtest.sh export_empty_document_to_pdf,
+calcFindInAllSheets, ., ./runtest.sh find_in_all_sheets,
+calcExportOdfToXls, ., ./runtest.sh export_odf_to_xls,
+calcStoreCellFormats, ., ./runtest.sh store_cell_formats,
+calcMathBetweenStringAndNumber, ., ./runtest.sh math_between_string_and_number,
+calcProtectingCalcSheet, ., ./runtest.sh protecting_calc_sheet,
+
+#base
+createDb, ., ./runtest.sh create_db,
+createTableInDb, ., ./runtest.sh create_table_in_db,
+addRecordsToTable, ., ./runtest.sh add_records_to_table,
+addNonEnglishRecordsToTable, ., ./runtest.sh add_non_english_records_to_table,
+
+#upstream tests
+smoketest, ./tests/smoketest, ./runtest.sh, cppunit, 5m

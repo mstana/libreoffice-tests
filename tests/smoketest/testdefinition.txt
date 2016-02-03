@@ -1,0 +1,48 @@
+#README
+#This file in the future will replace the makefile as defined in the requirements when required
+#file to be inserted in the components test directories similar to where the make file currently resides
+
+#test owner
+Owner:Jiri Koten <jkoten@redhat.com>
+
+#test name
+Name:smoketest
+
+#test version
+Version:1.0
+
+#test path
+Path:/mnt/tests/libreoffice/tests/smoketest
+
+#test description
+Description:LibreOffice smoketest
+
+#test run for
+RunFor:libreoffice
+
+# test process watchdog, time in hours, minutes and  seconds (h,m,s). (Required)
+TestTime:5m
+
+#test package dependency names, comma delimited (Optional)
+Requires:libreoffice, cppunit
+
+#rpm package dependency names, comma delimited (Optional)
+RhtsRequires:automation-desktop-rhel7-install
+
+#test for releases
+Releases:rhel7
+
+#test priority
+Priority:Normal
+
+#test license info
+License:GPLv2
+
+#is test confidential
+Confidential:no
+
+#is test destructive
+Destructive:no
+
+#future considerations
+Degug:False
